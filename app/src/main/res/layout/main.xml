@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="312dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="316dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="1dp"
+        android:layout_height="312dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="212dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="1dp"
+        android:layout_height="312dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="212dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="1dp"
+        android:layout_height="312dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="212dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="312dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="524dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="312dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="420dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider13"
+        android:layout_width="1dp"
+        android:layout_height="312dp"
+        android:layout_marginStart="352dp"
+        android:layout_marginTop="212dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="312dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="212dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/square1"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="212dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:gravity="bottom|center"
+        android:text=""
+        android:textSize="96sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/winnerField"
+        android:layout_width="272dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:gravity="bottom|center"
+        android:text=""
+        android:textSize="48sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/square2"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="212dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:gravity="bottom|center"
+        android:text=""
+        android:textSize="96sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/square3"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="212dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:gravity="bottom|center"
+        android:text=""
+        android:textSize="96sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/square4"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="316dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:gravity="bottom|center"
+        android:text=""
+        android:textSize="96sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/square5"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="316dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:gravity="bottom|center"
+        android:text=""
+        android:textSize="96sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/square6"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="316dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:gravity="bottom|center"
+        android:text=""
+        android:textSize="96sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/square7"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="420dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:gravity="bottom|center"
+        android:text=""
+        android:textSize="96sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/square8"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="420dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:gravity="bottom|center"
+        android:text=""
+        android:textSize="96sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/square9"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="420dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:gravity="bottom|center"
+        android:text=""
+        android:textSize="96sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
