@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 
 
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     public static TextView winnerField;
 
     static List<TextView> squareList = new ArrayList<>();
-
+    static Button playAgain;
 
 
     @Override
@@ -37,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         winnerField = findViewById(R.id.winnerField);
+        playAgain = findViewById(R.id.playAgain);
+        playAgain.setVisibility(View.INVISIBLE);
 
         createSquares();
         createSquareList();
@@ -60,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+
     }
     public static void checkWinner(){
         //Pridedu mygtukus prie matricos
@@ -75,19 +79,40 @@ public class MainActivity extends AppCompatActivity {
             if(Objects.equals(matrix[i][0], matrix[i][1]) && Objects.equals(matrix[i][2], matrix[i][0])
                     && !Objects.equals(matrix[i][0], "")){
                 winnerField.setText("Winner is player " + player);
+                stopAction();
+                playAgain.setVisibility(View.VISIBLE);
             } else if (Objects.equals(matrix[0][i], matrix[1][i])
                     && Objects.equals(matrix[2][i], matrix[0][i]) && !Objects.equals(matrix[0][i], "")) {
                 winnerField.setText("Winner is player " + player);
+                stopAction();
+                playAgain.setVisibility(View.VISIBLE);
+
             }
 
         }
-        if(Objects.equals(matrix[0][0], matrix[1][1]) && Objects.equals(matrix[2][2], matrix[0][0]) && !Objects.equals(matrix[0][0], "")){
+        if(Objects.equals(matrix[0][0], matrix[1][1]) && Objects.equals(matrix[2][2], matrix[0][0]) &&
+                !Objects.equals(matrix[0][0], "")){
             winnerField.setText("Winner is player " + player);
-        } else if (Objects.equals(matrix[0][2], matrix[1][1]) && Objects.equals(matrix[2][0], matrix[0][2]) && !Objects.equals(matrix[0][2], "")) {
+            stopAction();
+            playAgain.setVisibility(View.VISIBLE);
+        } else if (Objects.equals(matrix[0][2], matrix[1][1]) && Objects.equals(matrix[2][0], matrix[0][2]) &&
+                !Objects.equals(matrix[0][2], "")) {
             winnerField.setText("Winner is player " + player);
+            stopAction();
+            playAgain.setVisibility(View.VISIBLE);
+        }
+        int draw = 0;
+        for(TextView tv : squareList){
+            if(!tv.getText().equals("")){
+                draw++;
+            }
+        }
+        if(draw == 9){
+            winnerField.setText("Draw");
+            playAgain.setVisibility(View.VISIBLE);
         }
     }
-    public void createSquares(){winnerField.setText("Winner is player " + player);
+    public void createSquares(){
         firstSquare = findViewById(R.id.square1);
         secondSquare = findViewById(R.id.square2);
         thirdSquare = findViewById(R.id.square3);
@@ -108,5 +133,15 @@ public class MainActivity extends AppCompatActivity {
         squareList.add(seventhSquare);
         squareList.add(eighthSquare);
         squareList.add(ninthSquare);
+    }
+    public static void stopAction(){
+        for(TextView tv : squareList){
+            tv.setOnClickListener(null);
+        }
+    }
+    public void clearBlocks(){
+        for(TextView tv : squareList){
+            tv.setText("");
+        }
     }
 }

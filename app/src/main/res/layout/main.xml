@@ -101,8 +101,8 @@
 
     <TextView
         android:id="@+id/winnerField"
-        android:layout_width="272dp"
-        android:layout_height="99dp"
+        android:layout_width="271dp"
+        android:layout_height="132dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="44dp"
         android:fontFamily="@font/comic_neue_bold"
@@ -222,6 +222,18 @@
         android:text=""
         android:textSize="96sp"
         app:guidelineUseRtl="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="209dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="572dp"
+        android:text="Play again"
+        android:textSize="34sp"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
