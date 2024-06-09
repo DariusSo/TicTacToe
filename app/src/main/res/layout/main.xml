@@ -3,85 +3,89 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFDFB"
+    android:backgroundTint="#F4F3F3"
+    android:foregroundTint="#FFF9F9">
 
     <View
         android:id="@+id/divider6"
         android:layout_width="312dp"
-        android:layout_height="1dp"
+        android:layout_height="4dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="316dp"
-        android:background="?android:attr/listDivider"
+        android:background="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/divider11"
-        android:layout_width="1dp"
+        android:layout_width="4dp"
         android:layout_height="312dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="212dp"
-        android:background="?android:attr/listDivider"
+        android:background="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/divider12"
-        android:layout_width="1dp"
+        android:layout_width="4dp"
         android:layout_height="312dp"
         android:layout_marginStart="248dp"
         android:layout_marginTop="212dp"
-        android:background="?android:attr/listDivider"
+        android:background="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/divider10"
-        android:layout_width="1dp"
+        android:layout_width="4dp"
         android:layout_height="312dp"
         android:layout_marginStart="144dp"
         android:layout_marginTop="212dp"
-        android:background="?android:attr/listDivider"
+        android:background="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/divider9"
         android:layout_width="312dp"
-        android:layout_height="1dp"
+        android:layout_height="4dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="524dp"
-        android:background="?android:attr/listDivider"
+        android:background="@color/black"
+        android:backgroundTint="#020202"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/divider8"
         android:layout_width="312dp"
-        android:layout_height="1dp"
+        android:layout_height="4dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="420dp"
-        android:background="?android:attr/listDivider"
+        android:background="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/divider13"
-        android:layout_width="1dp"
-        android:layout_height="312dp"
+        android:layout_width="4dp"
+        android:layout_height="316dp"
         android:layout_marginStart="352dp"
         android:layout_marginTop="212dp"
-        android:background="?android:attr/listDivider"
+        android:background="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/divider7"
         android:layout_width="312dp"
-        android:layout_height="1dp"
+        android:layout_height="4dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="212dp"
-        android:background="?android:attr/listDivider"
+        android:background="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -94,6 +98,7 @@
         android:fontFamily="@font/comic_neue_bold"
         android:gravity="bottom|center"
         android:text=""
+        android:textColor="#FA0000"
         android:textSize="96sp"
         app:guidelineUseRtl="false"
         app:layout_constraintStart_toStartOf="parent"
@@ -233,8 +238,9 @@
         android:layout_marginTop="572dp"
         android:text="Play again"
         android:textSize="34sp"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
