@@ -18,15 +18,15 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity {
 
     public static int player = 1;
-    public static TextView firstSquare;
-    public static TextView secondSquare;
-    public static TextView thirdSquare;
-    public static TextView fourthSquare;
-    public static TextView fifthSquare;
-    public static TextView sixthSquare;
-    public static TextView seventhSquare;
-    public static TextView eighthSquare;
-    public static TextView ninthSquare;
+    public TextView firstSquare;
+    public TextView secondSquare;
+    public TextView thirdSquare;
+    public TextView fourthSquare;
+    public TextView fifthSquare;
+    public TextView sixthSquare;
+    public TextView seventhSquare;
+    public TextView eighthSquare;
+    public TextView ninthSquare;
 
     public static TextView winnerField;
 
